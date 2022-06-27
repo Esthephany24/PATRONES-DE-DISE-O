@@ -1,0 +1,56 @@
+package PATRONES.ipd.objectpool.impl;
+import java.util.Calendar;
+import java.util.Stack;
+import java.util.UUID;
+import java.util.concurrent.LinkedBlockingDeque;
+import java.util.concurrent.TimeUnit;
+
+public abstract class AbstractObjectPool<T extends IPooledObject>
+implements IObjectPool<T> {
+
+private final int minInstances;
+private final int maxInstances;
+private final int waitTime;
+
+private final IPoolableObjectFactory<T> poolableObjectFactory;
+private final Stack<PooledObjectStatus<T>> fullStack = new Stack<>();
+private final Stack<PooledObjectStatus<T>> useStack = new Stack<>();
+private final Stack<PooledObjectStatus<T>> freeStack = new Stack<>();
+public AbstractObjectPool(int minInstances, int maxInstances, int waitTime
+, IPoolableObjectFactory<T> poolableObjectFactory) {
+System.out.println("=========== STARTING ============");
+this.minInstances = minInstances;
+this.maxInstances = maxInstances;
+this.waitTime = waitTime;
+this.poolableObjectFactory = poolableObjectFactory;
+initPool();
+System.out.println("=========== FINISH ============");
+System.out.println();
+}
+private void initPool() {
+for (int c = fullStack.size(); c < minInstances; c++) {
+PooledObjectStatus<T> createNewPooledObject = createNewPooledObject();
+freeStack.push(createNewPooledObject);
+}
+}
+
+private static class PooledObjectStatus<T> {
+
+boolean used;
+UUID uuid;
+T pooledObject;
+
+public PooledObjectStatus(T pooledObject) {
+this.used = false;
+this.uuid = UUID.randomUUID();
+this.pooledObject = pooledObject;
+}
+}
+
+private T getInternalObject() throws PoolException {
+synchronized (freeStack) {
+if (!freeStack.isEmpty()) {
+PooledObjectStatus<T> first = this.freeStack.pop();
+first.used = true;
+System.out.println("Provisioning1 Object > "
++ first.uuid.toString());
