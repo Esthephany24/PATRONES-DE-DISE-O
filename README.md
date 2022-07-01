@@ -70,7 +70,9 @@
     -   Si ud. requiere trabajar con una gran cantidad de objetos, los cuales son caros compuptacionalmente. Este patrón puede ayudarlo, ya que requiere dichos objetos por un tiempo muy corto para luego ser desechados. Este progrma permite reutilizar los patrones, para evitar que se vuelvan a crear los patrones
 
 -   Ciclo de vida de un objeto dentro del ObjectPool.
-    ![CICLO_DE_VIDA_OBJECT_POOL](imagenes/ciclo_de_vida_objectPool.png)
+    ![CICLO_DE_VIDA_OBJECT_POOL]
+    ![image](https://user-images.githubusercontent.com/103951460/176880641-10a27e63-f80d-4bae-8d37-f93d675e729e.png)
+
     - Fuente: (Blancarte, O.) Introducción a los patrones de diseño.
 
 ## EJERCICIO RESUELTO
