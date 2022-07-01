@@ -99,11 +99,11 @@
 ## ESCENARIO
 -imaginaremos que tenemos que desarrollar una aplicación multi hilos, esta aplicación tendrá que hacer muchas tareas de forma simultánea, sinembargo, por cuestión de rendimiento, tenemos que administrar el número máximo de procesos que se pueden ejecutar al mismo tiempo, dejando en espera el resto de procesos; los procesos esperarán hasta que otro finalice para poder ser ejecutados, si la espera pasa de un tiempo determinado, el programa negará el servicio y los procesos no serán realizados.
 Por cuestión de practicidad, los procesos simplemente se ejecutarán por 10 segundos y terminarán
+
+-Forma en la que se atenderan los procesos
 #
     ![image](https://user-images.githubusercontent.com/103951460/176884066-682b58cd-294a-4ddb-9dd0-86cbcbaef780.png)
-    
-    
-    - Forma en la que se atenderan los procesos
+   
     - Fuente: (Blancarte, O.) Introducción a los patrones de diseño.
     
 
