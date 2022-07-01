@@ -99,6 +99,8 @@
 Por cuestión de practicidad, los procesos simplemente se ejecutarán por 10 segundos y terminarán
 #
     ![image](https://user-images.githubusercontent.com/103951460/176884066-682b58cd-294a-4ddb-9dd0-86cbcbaef780.png)
+    
+    
     - Forma en la que se atenderan los procesos
     - Fuente: (Blancarte, O.) Introducción a los patrones de diseño.
     
