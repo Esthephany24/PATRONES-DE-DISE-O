@@ -86,12 +86,9 @@
    Destroy: El objeto se destruye cuando un proceso lo solicita  o porque ya no sirve más
     
 -   Estructura del Patrón de diseño Object Pool
-#
-     
-    ![image](https://user-images.githubusercontent.com/103951460/176884918-08ccb26d-4ab3-4f81-b1c2-c31fb2e3dde8.png)
-
-
-
+  #
+  ![image](https://user-images.githubusercontent.com/103951460/176885069-d907a133-a34b-43b4-9ec7-6eff294afdc0.png)
+   
     - Fuente: (Blancarte, O.) Introducción a los patrones de diseño.
     
 #    
