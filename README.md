@@ -87,7 +87,9 @@
     
 -   Estructura del Patrón de diseño Object Pool
 #
-  ![image](https://user-images.githubusercontent.com/103951460/176883270-f5cd7001-6f4a-4ce9-97f4-2a3aff41c77e.png)
+     
+     ![image](https://user-images.githubusercontent.com/103951460/176884474-bec3f156-c4fb-4614-a5e6-69d11555619b.png)
+
 
     - Fuente: (Blancarte, O.) Introducción a los patrones de diseño.
     
