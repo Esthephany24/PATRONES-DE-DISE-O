@@ -115,16 +115,18 @@ Por cuestión de practicidad, los procesos simplemente se ejecutarán por 10 seg
 ## EJERCICIOS PROPUESTOS
 
 -   Se han creado estructuras complejas con objetos más pequeños.
-    -   Agregue un nuevo atributo a la clase AbstractProduct para definir la tasa de impuesto que tendrá el producto, el impuesto deberá ser calculado y mostrado a nivel de paquete.
-    -   Agregues otro atributo a la clase AbstractProduct para definir la cantidad, esta cantidad deberá ser calculada a la hora de mostrar el precio del paquete.
-    -   Agregue productos para crear un paquete, podríamos agregar un producto de descuento con precio negativo.
+    -   Agregue un nuevo atributo a la clase AbstractObjectPool 
+    
+    
 -   Elabore los ejemplos y analice los resultados.
 
 
 ## REFERENCIAS
 -   Oscar J Blancarte Iturralde. Introducción a los patrones de diseño_ Un enfoque práctico (Spanish Edition. CreateSpace Independent Publishing Platform (2016)
 
-#
+##ENTREGABLES
+
+https://drive.google.com/drive/folders/1riBk-n7sW93DXMzy3l9xmjWLfyr60qYM?usp=sharing
 
 [license]: https://img.shields.io/github/license/rescobedoulasalle/git_github?label=rescobedoulasalle
 [license-file]: https://github.com/rescobedoulasalle/git_github/blob/main/LICENSE
