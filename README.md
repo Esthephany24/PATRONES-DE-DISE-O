@@ -106,9 +106,11 @@ Por cuestión de practicidad, los procesos simplemente se ejecutarán por 10 seg
     - Fuente: (Blancarte, O.) Introducción a los patrones de diseño.
 
 ## EJERCICIO RESUELTO
+- El principal problema a resolver es el desarrollo. El componente nos permite limitar la cantidad de procesos que pueden ejecutarse al mismo tiempo y los procesos solo pueden esperar una cierta cantidad de tiempo antes de darse por vencidos, por lo que crear un ObjectPool de procesos puede ser una gran estrategia.
 
+- Una buena idea sería crear objetos que nos permitan controlar la ejecución de cada proceso y estos objetos puedan ser administrados por ObjectPool, de esa forma cada vez que la aplicación necesite iniciar un proceso deberá solicitar el tiempo de ejecución del objeto a ObjectPool, ObjectPool extraerá un objeto, pero si no hay ningún objeto disponible, se pondrá en cola hasta que el componente libere uno.
 
-
+- El ObjectPool será configurable para hacer que el solicitante espere una cierta cantidad de tiempo, si no puede satisfacer la solicitud en el objeto dentro de ese tiempo, finalizará la solicitud con una excepción personalizada.
 
 ## EJERCICIOS PROPUESTOS
 
