@@ -70,10 +70,24 @@
     -   Si ud. requiere trabajar con una gran cantidad de objetos, los cuales son caros compuptacionalmente. Este patrón puede ayudarlo, ya que requiere dichos objetos por un tiempo muy corto para luego ser desechados. Este progrma permite reutilizar los patrones, para evitar que se vuelvan a crear los patrones
 
 -   Ciclo de vida de un objeto dentro del ObjectPool.
-    ![CICLO_DE_VIDA_OBJECT_POOL]
+   #
     ![image](https://user-images.githubusercontent.com/103951460/176880641-10a27e63-f80d-4bae-8d37-f93d675e729e.png)
 
     - Fuente: (Blancarte, O.) Introducción a los patrones de diseño.
+    #
+    El ciclo de vida es el siguiente:
+    
+     * New: se crea un nuevo objeto, debido a que el object pool no tiene objects disponibles o porque se está iniciando y necesita crear nuevas  instancias mínimas.
+     * Pooled: se libera un objeto para ponerlo en el ObjectPool a fin de que esté disponible para que sea utilizado por otro proceso y asi no crear uno nuevo.
+     * Used: un proceso ha solicitado el objeto y no estara disponible hasta que este no sea liberado 
+     * Releace:cuando el objeto es liberado, hay dos opciones: se coloca nuevamente en el object pool o es destruido en caso de invalidarse su uso
+     * Destroy: El objeto se destruye cuando un proceso lo solicita  o porque ya no sirve más
+    
+-   Estructura del Patrón de diseño Object Pool
+#
+    ![image](https://user-images.githubusercontent.com/103951460/176882495-2f83e18f-4c45-4589-b7c6-ee65068470e9.png)
+    - Fuente: (Blancarte, O.) Introducción a los patrones de diseño.
+- El object pool es el responsable de proveer los objetos, pero no sabe como crearlos.
 
 ## EJERCICIO RESUELTO
 
