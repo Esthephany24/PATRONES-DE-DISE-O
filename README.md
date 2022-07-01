@@ -112,6 +112,12 @@ Por cuestión de practicidad, los procesos simplemente se ejecutarán por 10 seg
 
 - El ObjectPool será configurable para hacer que el solicitante espere una cierta cantidad de tiempo, si no puede satisfacer la solicitud en el objeto dentro de ese tiempo, finalizará la solicitud con una excepción personalizada.
 
+- Crearemos nuestro proyecto de ObjectPool y los paquetes que necesitaremos
+#
+![image](https://user-images.githubusercontent.com/103951460/176902458-49e7890a-63a5-4594-8be0-2d6f3c09e092.png)
+
+- En la interface de IObjectPool 
+
 ## EJERCICIOS PROPUESTOS
 
 -   Se han creado estructuras complejas con objetos más pequeños.
