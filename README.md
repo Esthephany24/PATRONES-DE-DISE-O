@@ -75,7 +75,7 @@
 
 
     - Fuente: (Blancarte, O.) Introducción a los patrones de diseño.
-    #
+#
 - El ciclo de vida es el siguiente:
     
    New: se crea un nuevo objeto, debido a que el object pool no tiene objects disponibles o porque se está iniciando y necesita crear nuevas  instancias mínimas.
@@ -92,6 +92,10 @@
     
 #    
 - El object pool es el responsable de proveer los objetos, pero no sabe como crearlos.
+
+## ESCENARIO
+-imaginaremos que tenemos que desarrollar una aplicación multi hilos, esta aplicación tendrá que hacer muchas tareas de forma simultánea, sinembargo, por cuestión de rendimiento, tenemos que administrar el número máximo de procesos que se pueden ejecutar al mismo tiempo, dejando en espera el resto de procesos; los procesos esperarán hasta que otro finalice para poder ser ejecutados, si la espera pasa de un tiempo determinado, el programa negará el servicio y los procesos no serán realizados.
+Por cuestión de practicidad, los procesos simplemente se ejecutarán por 10 segundos y terminarán
 
 ## EJERCICIO RESUELTO
 
