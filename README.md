@@ -127,6 +127,38 @@ Se tiene una excepcion personalizada para lanzar otro error dentro del ObjectPoo
 # 
 ![image](https://user-images.githubusercontent.com/103951460/177012601-1a529626-8cdf-4cfa-aa64-73efe90751df.png)
 
+- Clase AbstractObjectPool
+Contiene el fuuncionamiento basico del ObjectPool, implementando una interface ConcreteObjectPool la cual nos servirá para crear
+ConcreteObjectPool. Esta es una de las clases mas importantes.
+#
+![image](https://user-images.githubusercontent.com/103951460/177012743-336deee9-f426-4a76-a335-f2ad09d515c6.png)
+
+#
+![image](https://user-images.githubusercontent.com/103951460/177012752-8c43bed7-aeed-4221-9a60-ba57be73f280.png)
+
+#
+![image](https://user-images.githubusercontent.com/103951460/177012775-02866fbb-11f6-4a18-9cd4-e4f0e6913c5c.png)
+
+#
+![image](https://user-images.githubusercontent.com/103951460/177012781-5148eb17-5f7e-47f1-92fc-9b020624c763.png)
+
+#
+![image](https://user-images.githubusercontent.com/103951460/177012792-6f6efce6-2337-439d-8660-5a46c2ed1a56.png)
+
+-Clase ExecutorThreadPool
+La clase se hereda del AbstractObjectPool , para tener toda la funcionalidad por default y crear un nuevo Pool, este Pool  es exclusivo para Executor Task
+
+#
+![image](https://user-images.githubusercontent.com/103951460/177012874-ce44fa65-3db9-4263-a4c0-ac82a51ad588.png)
+
+
+-Interface IPoolableObject
+Es la interface en la que todos los objects del Pool se implementaran, te indica los objetos que pueden ser administrados por el ObjectPool 
+
+#
+![image](https://user-images.githubusercontent.com/103951460/177012959-43c07102-1423-4f53-a3e6-4e8a0b29eaf6.png)
+
+
 
 ## EJERCICIOS PROPUESTOS
 
