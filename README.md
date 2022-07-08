@@ -117,10 +117,12 @@ Por cuestión de practicidad, los procesos simplemente se ejecutarán por 10 seg
 ![image](https://user-images.githubusercontent.com/103951460/176902458-49e7890a-63a5-4594-8be0-2d6f3c09e092.png)
 
 - En la interface de IObjectPool 
--#
+Va a ser establecida para realizar operaciones minimas, para reutilizar y crear objectPool mas personalizados
+
+#
 ![image](https://user-images.githubusercontent.com/103951460/177012634-b8284e5b-6705-4d02-a607-af43dc0e5462.png)
 
-Va a ser establecida para realizar operaciones minimas, para reutilizar y crear objectPool mas personalizados
+
 
 -CLASE PoolException
 Se tiene una excepcion personalizada para lanzar otro error dentro del ObjectPool, heredando la clase Exception
