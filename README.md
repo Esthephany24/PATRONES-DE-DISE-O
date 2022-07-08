@@ -156,7 +156,41 @@ La clase se hereda del AbstractObjectPool , para tener toda la funcionalidad por
 Es la interface en la que todos los objects del Pool se implementaran, te indica los objetos que pueden ser administrados por el ObjectPool 
 
 #
-![image](https://user-images.githubusercontent.com/103951460/177012959-43c07102-1423-4f53-a3e6-4e8a0b29eaf6.png)
+![image](https://user-images.githubusercontent.com/103951460/177990808-b164ebbf-5ed7-4f44-ba2b-3c9ba447a38a.png)
+
+
+-Clase ExecutorTask:
+Representa el modelo de componentes con la clase ConcretePoolableObject, las cuales finalmente administren el objectpool
+
+#
+![image](https://user-images.githubusercontent.com/103951460/177991255-5b9a3c03-ecf4-4a3a-b6f0-9bc04dfd73a3.png)
+
+-Interface IPoolableObjectFactory:
+Un factory tiene la responsabilidad de crear los objetos, por lo tanto definirá la estructura mínima que éste tendra.
+
+#
+![image](https://user-images.githubusercontent.com/103951460/177993028-fa33b092-7c20-4da6-84f4-7e853964afc4.png)
+
+
+-Clase ExecutorTaskFactory:
+La clase hereda de IPoolablObjectFactory y sobrescribe por ExecutorTask, donde createnew, creara los objetos
+
+#
+![image](https://user-images.githubusercontent.com/103951460/177993310-c4e54a0c-3d18-411e-b84a-1e8bbfcb549f.png)
+
+-Clase ObjectPoolMain:
+Es la clase principal en la cual se probara el patron 
+
+#
+![image](https://user-images.githubusercontent.com/103951460/177993687-caa57ea5-0958-4995-a890-676eb4a7077d.png)
+
+-EJECUCION:
+Se tiene le siguiente resultado luego de ejecutar la clase principal ObjectPoolMain
+
+#
+![image](https://user-images.githubusercontent.com/103951460/177993915-ef36d8fe-87f7-43b8-b48d-1c3c2e26f2fb.png)
+
+
 
 
 
@@ -166,7 +200,7 @@ Es la interface en la que todos los objects del Pool se implementaran, te indica
     -   Agregue un nuevo atributo a la clase AbstractObjectPool 
     
     
--   Elabore los ejemplos y analice los resultados.
+
 
 
 ## REFERENCIAS
@@ -200,11 +234,9 @@ https://drive.google.com/drive/folders/1riBk-n7sW93DXMzy3l9xmjWLfyr60qYM?usp=sha
 [java-site]: https://docs.oracle.com/javase/tutorial/
 
 
-[![Debian][Debian]][debian-site]
-[![Git][Git]][git-site]
+
 [![GitHub][GitHub]][github-site]
-[![Vim][Vim]][vim-site]
-[![Java][Java]][java-site]
+
 
 [![License][license]][license-file]
 [![Downloads][downloads]][releases]
